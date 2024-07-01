@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>login</title>
+    <!-- stylesheets -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+     <!-- section  from index.html -->
+  <section class="home">
+    <div class="home-box">
+         <nav class="navbar">
+              <div class="logo bars">
+                   <div class="bar">
+                        <i class="fa fa-bars"></i>
+                   </div>
+                   <!-- refresh button -->
+                   <abbr title="Home"><a href="index.html"><h3>TravelAfrica</h3></a></abbr>
+              </div>
+          
+              <!-- buttons  -->
+         </nav>
+          <!-- form starts here -->
+<form id="login-form" onsubmit="return validateForm()">
+    <h3>Login or <a href="form.html">Signup</a></h3>
+    <div class="container">
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit" onclick="submitForm()">Login</button>
+    </div>
+</form>
+</body>
+</html>
+
+
+
+
+
+

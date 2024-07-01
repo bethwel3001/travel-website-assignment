@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup</title>
+  
+<link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+ <!--Web logo -->
+ <section class="home">
+  <div class="home-box">
+       <nav class="navbar">
+            <div class="logo bars">
+                 <div class="bar">
+                      <i class="fa fa-bars"></i>
+                 </div>
+                 <!-- refresh button -->
+                 <a href="index.html"><h3>TravelAfrica</h3></a>
+            </div>
+       </nav>
+	<form id="signup-form" onsubmit="return validateForm()">
+		<h3>Signup or <a href="login.html">Login</a></h3>
+		<div class="container">
+			<label for="fname"><b>First Name</b></label>
+			<input type="text" placeholder="Enter First Name" name="fname" required>
+
+			<label for="lname"><b>Last Name</b></label>
+			<input type="text" placeholder="Enter Last Name" name="lname" required>
+
+			<label for="location"><b>Location</b></label>
+			<input type="text" placeholder="Enter Location" name="location" required>
+
+			<label for="phone"><b>Phone Number</b></label>
+			<input type="tel" placeholder="Enter Phone Number" name="phone" required>
+
+			<label for="email"><b>Email</b></label>
+			<input type="email" placeholder="Enter Email" name="email" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit" onclick="submitForm()">Signup</button>
+		</div>
+	</form>
+  </html>
+</body>
+    <script>
+      function submitForm() {
+        alert("Thank you , your details have been submitted!");
+      }
+    </script>
+  
